@@ -76,6 +76,12 @@ import api from "@/services/api";
 
 export default {
   name: "register",
+  metaInfo: {
+    title: "注册", // 设置页面标题
+    meta: [
+      { name: "description", content: "SSO单点登录，统一注册" }, // 设置页面描述
+    ],
+  },
   data() {
     var validatePass = (rule, value, callback) => {
       if (value === "" || !value) {
@@ -205,7 +211,7 @@ export default {
   align-items: center;
   width: 100%;
   height: 100%;
-  background: url("../assets/loginbk.jpg") no-repeat;
+  background: url("../assets/images/background.webp") no-repeat;
   background-size: cover;
 }
 .loginbox {

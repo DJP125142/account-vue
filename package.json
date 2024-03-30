@@ -20,6 +20,7 @@
     "vue": "^2.5.2",
     "vue-cookies": "^1.8.3",
     "vue-fullpage": "^2.0.5",
+    "vue-meta": "^2.4.0",
     "vue-router": "^3.5.2",
     "vue-seamless-scroll": "^1.1.23"
   },

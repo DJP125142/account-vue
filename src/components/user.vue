@@ -19,6 +19,12 @@ import api from "@/services/api";
 
 export default {
   name: "user",
+  metaInfo: {
+    title: "用户", // 设置页面标题
+    meta: [
+      { name: "description", content: "SSO单点登录，用户信息" }, // 设置页面描述
+    ],
+  },
   data() {
     return {
       username: "",
@@ -87,7 +93,7 @@ export default {
   align-items: center;
   width: 100%;
   height: 100%;
-  background: url("../assets/loginbk.jpg") no-repeat;
+  background: url("../assets/images/background.webp") no-repeat;
   background-size: cover;
 }
 .userbox {

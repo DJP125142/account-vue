@@ -8,9 +8,11 @@ import cookies from "vue-cookies";
 import { isLogin } from './utils/common';
 import "element-ui/lib/theme-chalk/index.css";
 import "./global.css";
+import VueMeta from 'vue-meta';
 
 Vue.use(cookies);
 Vue.use(ElementUI);
+Vue.use(VueMeta);
 
 Vue.config.productionTip = false;
 Vue.prototype.$isLogin = isLogin;
