@@ -186,7 +186,21 @@ export default {
                   _this.$router.push({ path: "/login" });
                 },
               });
-            } else {
+            } else if (code == 400) {
+              if (data != null){
+                if (data.name && data.name != "") {
+                  this.$message.error(data.name);
+                }
+                if (data.password && data.password != "") {
+                  this.$message.error(data.password);
+                }
+                if (data.code && data.code != "") {
+                  this.$message.error(data.code);
+                }
+              }else{
+                this.$message.error(msg);
+              }
+            }else {
               this.$message.error(msg);
             }
           });
